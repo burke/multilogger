@@ -12,8 +12,12 @@ Gem::Specification.new do |s|
   s.date = %q{2010-01-13}
   s.description = %q{Multilogger pattern matches incoming log messages to decide which log file to write them to.}
   s.email = %q{burke@burkelibbey.org}
+  s.extra_rdoc_files = [
+    "LICENSE"
+  ]
   s.files = [
     ".gitignore",
+     "LICENSE",
      "Rakefile",
      "VERSION",
      "lib/multilogger.rb",
