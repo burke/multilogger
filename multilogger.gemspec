@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{multilogger}
-  s.version = "0.1.3"
+  s.version = "0.1.4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Burke Libbey"]
-  s.date = %q{2010-01-13}
+  s.date = %q{2010-01-15}
   s.description = %q{Multilogger pattern matches incoming log messages to decide which log file to write them to.}
   s.email = %q{burke@burkelibbey.org}
   s.extra_rdoc_files = [
@@ -21,13 +21,17 @@ Gem::Specification.new do |s|
      "Rakefile",
      "VERSION",
      "lib/multilogger.rb",
-     "multilogger.gemspec"
+     "multilogger.gemspec",
+     "spec/multilogger_spec.rb"
   ]
   s.homepage = %q{http://github.com/burke/multilogger}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.5}
   s.summary = %q{Split Rails logging into multiple log files}
+  s.test_files = [
+    "spec/multilogger_spec.rb"
+  ]
 
   if s.respond_to? :specification_version then
     current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
