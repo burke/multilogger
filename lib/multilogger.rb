@@ -21,7 +21,7 @@ class MultiLogger < ActiveSupport::BufferedLogger
 
   def add(severity, message=nil, progname=nil, &block)
     @extra_logs.keys.each do |pattern|
-      if message.match(pattern)
+      if message && message.match(pattern)
         return @extra_logs[pattern].add(severity, message, progname, &block)
       end
     end
